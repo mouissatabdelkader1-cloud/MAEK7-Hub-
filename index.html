@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAEK7 Hub | المنصة المتكاملة للتحليل والتنبؤ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body {
+            background: linear-gradient(135deg, #0a0c12 0%, #1a1e2e 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        h1 { text-align: center; color: white; font-size: 2.8rem; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #9ca3af; margin-bottom: 40px; }
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .sector-card {
+            background: rgba(15, 19, 28, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #2d3748;
+            text-align: center;
+        }
+        .sector-card:hover {
+            transform: translateY(-10px);
+            border-color: #10a37f;
+            box-shadow: 0 25px 40px rgba(0,0,0,0.4);
+        }
+        .sector-icon { font-size: 64px; margin-bottom: 15px; }
+        .sector-card h2 { color: white; margin-bottom: 10px; font-size: 1.6rem; }
+        .sector-card p { color: #9ca3af; font-size: 13px; line-height: 1.6; margin-bottom: 15px; }
+        .badge-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 15px; }
+        .badge { background: #10a37f20; color: #10a37f; padding: 4px 12px; border-radius: 20px; font-size: 11px; }
+        hr { border-color: #2d3748; margin: 20px 0; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .sectors-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🏭 MAEK7 Labs</h1>
+    <p class="subtitle">منصة متكاملة للتحاليل الطبية، الغذائية، الصناعية، الزراعية، التنبؤ بالكوارث، والتحليل الأمني</p>
+    
+    <div class="sectors-grid">
+        <!-- القطاعات السابقة -->
+        <div class="sector-card" onclick="window.open('medical.html', '_blank')">
+            <div class="sector-icon">🩺</div>
+            <h2>القطاع الطبي</h2>
+            <p>استشارات طبية، تحليل أشعة، تخطيط قلب، رنين مغناطيسي</p>
+            <div class="badge-list"><span class="badge">9 تخصصات</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('medicallab.html', '_blank')">
+            <div class="sector-icon">🧪</div>
+            <h2>المختبرات الطبية</h2>
+            <p>تحاليل الدم، الهرمونات، الأنسجة، المناعة</p>
+            <div class="badge-list"><span class="badge">تحاليل دم</span><span class="badge">هرمونات</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('foodlab.html', '_blank')">
+            <div class="sector-icon">🍎</div>
+            <h2>المختبرات الغذائية</h2>
+            <p>تحليل الأغذية، التركيب الغذائي، السلامة الميكروبية</p>
+            <div class="badge-list"><span class="badge">أغذية</span><span class="badge">مشروبات</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('industriallab.html', '_blank')">
+            <div class="sector-icon">🏭</div>
+            <h2>المختبرات الصناعية</h2>
+            <p>تحليل المواد، اختبارات الشد والصلابة، المعادن والبلاستيك</p>
+            <div class="badge-list"><span class="badge">معادن</span><span class="badge">بلاستيك</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('agriculturallab.html', '_blank')">
+            <div class="sector-icon">🌾</div>
+            <h2>المختبرات الزراعية</h2>
+            <p>تحليل التربة، الأسمدة، المبيدات، المحاصيل</p>
+            <div class="badge-list"><span class="badge">تربة</span><span class="badge">مياه</span><span class="badge">أسمدة</span></div>
+        </div>
+        
+        <!-- القطاعات الجديدة -->
+        <div class="sector-card" onclick="window.open('disaster.html', '_blank')">
+            <div class="sector-icon">🌪️</div>
+            <h2>التنبؤ بالكوارث</h2>
+            <p>تحليل بيانات الطقس، التنبؤ بالفيضانات، الزلازل، الحرائق، الأعاصير</p>
+            <div class="badge-list"><span class="badge">فيضانات</span><span class="badge">زلازل</span><span class="badge">حرائق</span><span class="badge">أعاصير</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('crops.html', '_blank')">
+            <div class="sector-icon">🌽</div>
+            <h2>المحاصيل الزراعية</h2>
+            <p>تقدير الإنتاج، اكتشاف الآفات، التنبؤ بالجفاف، تحسين المحصول</p>
+            <div class="badge-list"><span class="badge">آفات</span><span class="badge">جفاف</span><span class="badge">إنتاجية</span></div>
+        </div>
+        <div class="sector-card" onclick="window.open('security.html', '_blank')">
+            <div class="sector-icon">🛡️</div>
+            <h2>المجال الأمني</h2>
+            <p>تحليل كاميرات المراقبة، كشف التهديدات، تحليل السلوك، التعرف على الأنماط</p>
+            <div class="badge-list"><span class="badge">تحليل فيديو</span><span class="badge">كشف تهديدات</span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
